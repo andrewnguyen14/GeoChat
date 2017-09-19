@@ -22,14 +22,24 @@ Technology used:
 - User authentication and verification for application log in
 
 
-
+Log In Page
  ![alt text](public/images/ScreenShot1.png)
 
-
+Successfully Created an Account
  ![alt text](public/images/ScreenShot2.png)
 
-
+Sign In
  ![alt text](public/images/ScreenShot3.png)
 
-
+Instructions
  ![alt text](public/images/ScreenShot4.png)
+
+Main App Page
+ ![alt text](public/images/ScreenShot5.png)
+
+User Icons
+ ![alt text](public/images/ScreenShot6.png)
+
+ Message Boxes
+ ![alt text](public/images/ScreenShot7.png)
+
