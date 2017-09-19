@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- JQUERY CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--  OUR CSS STYLE SHEET -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>GeoChat Location</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div id="home" class="bg1">
+      <div class="container">
+        <div class="row form">
+          <!-- SIGN UP FORM START -->
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                Sign Up
+              </div>
+              <div class="panel-footer panel-color">
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputName" class="signuptext">Full Name</label>
+                    <input type="text" class="form-control" id="newName" placeholder="Full Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputUsername" class="signupText">Username</label>
+                    <input type="text" class="form-control" id="newUsername" placeholder="Username">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword" class="signupText">Password</label>
+                    <input type="password" class="form-control" id="newPassword" placeholder="Password">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword" class="signupText">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirmPassword" placeholder="Password">
+                  </div>
+                  <button type="button" class="btn btn-primary btn-lg btn-block signUp">Sign Up</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- SIGN UP FORM END -->
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <h2 style="color: white">Welcome, Please Sign Up</h2>
+          </div>
+        </div>
+        <!-- LOGIN SUCCESS OR FAIL -->
+        <div class="row" id="successmessage"></div>
+      </div>
+    </div>
+    <!-- ABOUT START -->
+    <div id="about" class="bg2">
+      <div class="container">
+        <div class="row panel1">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">About The Site</h3>
+            </div>
+            <div class="panel-footer Text1">Welcome to GeoChat!  This application allows you to dynamically and efficiently chat with other GeoChat users. Simply post a message to show your location and find other users that are around you to chat with them. Chatting made simple.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ABOUT END -->
+    <!-- START OF NAV BAR -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="hidden-xs">
+          <div id="nav">
+            <a href="#home" id="home"> GeoChat</a>
+            <a href="#about" id="about">About</a>
+            <!--     <a href="#turtle3" id="turtle3">Turtles?</a> -->
+            <a href="#advantages">Advantages</a>
+            <button type="button" class="btn btn-info btn-lg navbar-btn signInNav" data-toggle="modal" data-target="#signInModal">Sign In!</button>
+          </div>
+        </div>
+        <div class="visible-xs">
+          <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid navbar-custom">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="row">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  </button>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="navbar-nav navbar-right navbar-right-custom">
+                    <h4 style="color: white">GeoChat</h4>
+                    <li><a href="#home" id="home"> Home</a></li>
+                    <li><a href="#about" id="about">About</a></li>
+                    <li><a href="#advantages">Advantages</a></li>
+                    <button type="button" class="btn btn-info btn-lg navbar-btn signInNav" data-toggle="modal" data-target="#signInModal">Sign In!</button>
+                  </ul>
+                  </div><!-- /.navbar-collapse -->
+                </div>
+                </div><!-- /.container-fluid -->
+              </nav>
+            </div>
+            <!-- END OF NAV BAR -->
+            <!-- SIGN IN MODAL START -->
+            <div class="modal fade" id="signInModal" role="dialog">
+              <div class="modal-dialog">
+                <!--  Modal content -->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Sign In</h4>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="exampleInputUsername">Username</label>
+                        <input type="text" class="form-control" id="username" placeholder="Username">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Password">
+                      </div>
+                      <button type="button" class="btn btn-primary btn-lg btn-block signIn">Sign In</button>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- SIGN IN MODAL END -->
+            <!-- ADVANTAGES START -->
+            <div class="row">
+              <div style="padding:15px 15px 250px;font-size:30px" id="advantages" class="bg3">
+                <p><b>ADVANTAGES: This application will revolutionize the way you chat, as you can now locate <i>exactly</i> were other users are located.</b></p>
+                <ul>
+                  <li>No longer will you get lost or lose your friends!</li>
+                  <li>Find and chat with new friends!</li>
+                  <li>Become part of a community and discover new people!</li>
+                  <li>Sign in and out at your convience to simply turn it off when you don't want to chat any longer or share your location!</li>
+                </ul>
+              </div>
+            </div>
+            <!-- ADVANTAGES END -->
+            <!--  FOOTER START -->
+            <div class="row">
+              <div class="footer">
+                <p class="text-center">&copy; 2017 GeoChat</p>
+              </div>
+            </div>
+            <!--  FOOTER END -->
+            <!-- JS LINK -->
+            <script src="js/view.js"></script>
+            <!-- BOOTSTRAP CDN -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+          </body>
+        </html>

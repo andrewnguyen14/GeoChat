@@ -1,0 +1,146 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background-image: url("../images/connect.png");
+     /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer{
+  background-color: white;
+  font-weight: bold;
+}
+
+.copyright{
+  position: relative;
+  top: 12px;
+}
+
+.signuptext{
+  color: white;
+}
+
+#nav {
+  background-color: #333;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 60px;
+  display:block;
+  transition: top 0.3s;
+}
+
+#nav a{
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 13px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#nav #home{
+
+  float: left;
+  display: block;
+}
+
+#nav button{
+
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  margin-right: 10px;
+}
+
+#nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.bg1 {
+    /* The image used */
+    background-image: url("../images/connect.png");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg2 {
+    /* The image used */
+    background-image: url("../images/citybackground.jpg");
+
+    /* Full height */
+    height: 70%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg3{
+  background-color: #333;
+  color: white;
+}
+
+.form{
+
+  margin-top:20%;
+
+}
+
+.panel1{
+
+  margin-top:20%;
+
+}
+
+.Text1{
+
+  font-size: 150%;
+  line-height: 130%;
+
+}
+
+.panel-color{
+  background-color:#4a4c4f!important;
+}
+
+.signupText{
+  color:white;
+}
+
+.newPost{
+  height: 40px;
+  width: 75px;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px){
+  .newPost{
+    height: 40px;
+    width: 100%;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 640px){
+  .newPost{
+    height: 40px;
+    width: 100%;
+  }
+}

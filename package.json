@@ -1,0 +1,30 @@
+{
+  "name": "geo-cannon",
+  "version": "1.0.0",
+  "description": "geolocation social media based application",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/squirtle-crew/Geo-Cannon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/squirtle-crew/Geo-Cannon/issues"
+  },
+  "homepage": "https://github.com/squirtle-crew/Geo-Cannon#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "mysql2": "^1.4.2",
+    "sequelize": "^4.8.2"
+  },
+  "devDependencies": {
+    "jest": "^21.1.0",
+    "nightmare": "^2.10.0"
+  }
+}

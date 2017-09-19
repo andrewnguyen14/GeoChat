@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- JQUERY CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--  OUR CSS STYLE SHEET -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>GeoChat Location</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div class="container-fluid ">
+      <div class="row">
+        <!-- START OF NAV BAR -->
+        <div class="col-lg-12">
+          <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a href="/" class="navbar-brand"><img src="images/turtle-icon.png" width="30" height="30" alt=""></a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a data-toggle="modal" data-target="#myModal"><span></span>Instructions</a></li>
+                  <!--  INSTRUCTIONS MODAL START -->
+                  <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+                      
+                      <!-- MODAL CONTENT START-->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h4 class="modal-title">Instructions</h4>
+                        </div>
+                        <div class="modal-body">
+                          <p>1. You are the red marker</p>
+                          <p>2. Your friends are the people icons</p>
+                          <p>3. Type in your message in the the message box and click submit</p>
+                          <p>4. Be patient, wait 5 seconds</p>
+                          <p>5. Click on your red marker or your friends icon to see messages</p>
+                          <p>6. Have fun, meet new people and GEO - CHAT</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                      <!-- MODAL CONTENT END-->
+                    </div>
+                  </div>
+                  <!--  INSTRUCTIONS MODAL END -->
+                  <li><a href="/"><span></span>Logout</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <!-- END OF NAV BAR -->
+      <!-- MAP START -->
+      <div class="row">
+        <div class="container col-md-12">
+          <div class="panel panel-primary">
+            <div class="panel-heading">Friend's Map</div>
+            <div id="map" class="panel-body">Map</div>
+          </div>
+        </div>
+      </div>
+      <!-- MAP END -->
+      <!--USER MESSAGE START-->
+      <div class="row">
+        <div class="container col-md-6">
+          <div class="form-group">
+            <label style="color:white" for="UserInput">Your Message:</label>
+            <input type="UserInput" class="form-control" id="UserInput" placeholder="Enter Message" name="message">
+          </div>
+          <button type="submit" class="btn btn-primary newPost">Submit</button>
+        </div>
+        <!--USER MESSAGE END-->
+        <br>
+        <!-- POST START -->
+        <div class="container col-md-6">
+          <div class="panel panel-primary">
+            <div class="panel-heading">Your Recent Posts</div>
+            <div class="panel-body userspost">Messages</div>
+          </div>
+        </div>
+        <!-- POST END -->
+      </div>
+     <!-- JS LINK -->
+      <script type="text/javascript" src="js/map.js"></script>
+      <!-- GOOGLE API KEY -->
+      <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPyXEGlTM-ZZkhsdd3ZYeVheDM8Jtl5aQ&callback=initMap">
+      </script>
+      <!-- BOOTSTRAP CDN -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </div>
+  </body>
+</html>
