@@ -1,3 +1,3 @@
 DROP DATABASE IF EXISTS geochat_db;
--- Creates the "cannon_db" database --
+-- Creates the "geochat_db" database --
 CREATE DATABASE geochat_db;
