@@ -27,7 +27,7 @@ body, html {
   position: fixed;
   top: 0px;
   width: 100%;
-  height: 60px;
+  height: 70px;
   display:block;
   transition: top 0.3s;
 }
@@ -60,7 +60,7 @@ body, html {
 #nav .nav-left:hover {
   background-color: #ddd;
   color: black;
-  height: 60px;
+  height: 70px;
 }
 
 .bg1 {
