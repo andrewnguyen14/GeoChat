@@ -57,7 +57,7 @@ body, html {
   margin-right: 10px;
 }
 
-#nav a:hover {
+#nav .nav-left:hover {
   background-color: #ddd;
   color: black;
   height: 60px;
